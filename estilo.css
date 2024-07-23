@@ -1,0 +1,127 @@
+:root{
+    
+    /*text-transform*/
+    --lup: uppercase;
+    --lfau: default;
+
+    /*letter spacing -> espaçamento entre letras*/
+    --lsp: 5%;
+
+    /*weight -> estilo de fonte*/
+    --lb: bold;
+    --md: medium;
+    --rg: regular;
+
+    /*line height -> altura de linha*/
+    --line-auto: auto;
+    --line-200: 200%;
+    --line-140: 140%;
+
+    /*fontes*/
+    --title-lg: 48px;
+    --title-md: 40px;
+    --title-sm: 32px;
+    --title-xs: 16px;
+    --subtitle: 32px;
+    --body-lg: 20px;
+    --body-md: 16px;
+    --body-sm: 14px;
+    --body-xs: 12px;
+    --button: 14px;
+    --link: 14px;
+    --tag:10px;
+
+    /*cores*/
+    --text-title: #f8fbfb;
+    --text-body: #e2e7e9;
+    --text-label: #bac6c9;
+
+    --shape-stroke: #002347;
+    --shape-hover: #001933;
+    --shape-base: #000f1f;
+    --shape-bg: #00050A;
+
+    --blue-light: #73b6d2;
+    --blue-base: #358bb9;
+    --blue-mid: #2374a4;
+    --blue-dark: #144a72;
+    --blue-low: #08233c;
+
+    --pink-light: #C59DD2;
+    --pink-base:#9547A5;
+    --pink-dark:#7D298A;
+    --pink-low: #3F0F41;
+
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    background: var(--shape-bg);
+    color: var(--text-body);
+    font-family: 'Raleway';
+}
+body{
+    margin: 10%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    margin-bottom: 4px;
+}
+
+/*botões*/
+button{
+    width: 78px;
+    height: 40px;
+    font-size: var(--button);
+    font-weight: var(--lb);
+    border-radius: 8px;
+    border: none;
+    color: var(--text-body);
+}
+
+button.btn-primary{
+    background: var(--pink-dark);
+}
+button.btn-primary:hover{
+    background: var(--pink-base);
+}
+
+/*dentro do card*/
+.card{
+    background: var(--shape-hover);
+    border-radius: 24px;
+    padding: 32px 32px 32px 28px;
+    
+}
+.card-header .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-header h5{
+    color: var(--pink-light);
+    font-size: var(--title-xs);
+}
+
+.details .items li{
+    display:flex;
+       
+}
+
+li img p {
+    margin-left: 8px;
+}
+
+div.chip{
+    border-radius: full;
+    padding: 5px 10px;
+    font-size: 10px;
+    background: var(--shape-stroke);
+    color: var(--text-body);
+    font-weight: var(--lb);
+    text-transform: var(--lup);  
+}
